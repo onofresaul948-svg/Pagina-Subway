@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #005837;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.logo {
+    width: auto;
+    height: 80px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    gap: 10px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #0b7f45;
+    padding: 10px 18px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+}
+
+.nav-menu .cta {
+    background-color: #ffc72c;
+    color: #005837;
+}
+
+.banner-principal img,
+.banner-secundario img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titulo-novedades {
+    background-color: #ffce00;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background: #fff8e1;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #00a84a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .novedades {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .titulo-novedades {
+        font-size: 24px;
+    }
+
+    .footer-columns {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
